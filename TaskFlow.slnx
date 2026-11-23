@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TaskFlow.Core/TaskFlow.Core.csproj" />
+    <Project Path="src/TaskFlow.Maui/TaskFlow.Maui.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TaskFlow.Core.Tests/TaskFlow.Core.Tests.csproj" />
+  </Folder>
+</Solution>
