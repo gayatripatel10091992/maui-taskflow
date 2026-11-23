@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:shapes="clr-namespace:Microsoft.Maui.Controls.Shapes;assembly=Microsoft.Maui.Controls"
              x:Class="TaskFlow.Maui.App">
     <Application.Resources>
         <ResourceDictionary>
@@ -10,7 +11,11 @@
             <Style x:Key="Pill" TargetType="Border">
                 <Setter Property="StrokeThickness" Value="0" />
                 <Setter Property="Padding" Value="10,4" />
-                <Setter Property="StrokeShape" Value="RoundedRectangle 12" />
+                <Setter Property="StrokeShape">
+                    <Setter.Value>
+                        <shapes:RoundedRectangle CornerRadius="12" />
+                    </Setter.Value>
+                </Setter>
             </Style>
 
             <Style x:Key="PillLabel" TargetType="Label">
